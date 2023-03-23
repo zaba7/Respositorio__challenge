@@ -1,0 +1,9 @@
+use Challenge_SQL;
+CREATE TABLE EJ_2(
+	DivisionId INT NOT NULL,
+    	Year INT NOT NULL ,
+    	Revenue INT NOT NULL
+    );
+INSERT INTO EJ_2 VALUES(1,2018,60),(1,2021,40),(1,2020,70),(2,2021,-10),(3,2018,20),(3,2016,40),(4,2021,50);
+SELECT DivisionId FROM EJ_2 WHERE Year='2021' and Revenue >0;
+DROP TABLE EJ_2;
